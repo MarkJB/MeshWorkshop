@@ -18,7 +18,7 @@ To open the examples, make sure you have selected an ESP32/ESP8266 compatible bo
 
  
 
-Note: If compiling fails, compaining about AsyncTCP.h: No such file or directory, then you can get those files from here: https://github.com/me-no-dev/AsyncTCP, copy the two files in the src directory into your arduino libraries directory (on Windows that is in $USER\Documents\libraries\Painless_Mesh\src) 
+Note: If compiling fails, complaining about AsyncTCP.h: No such file or directory, then you can get those files from here: https://github.com/me-no-dev/AsyncTCP, copy the two files in the src directory into your arduino libraries directory (on Windows that is in $USER\Documents\libraries\Painless_Mesh\src) 
 
  
 
