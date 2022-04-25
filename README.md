@@ -18,8 +18,8 @@ To open the examples, make sure you have selected an ESP32/ESP8266 compatible bo
 
  
 
-Note: If compiling fails, complaining about AsyncTCP.h: No such file or directory, then you can get those files from here: https://github.com/me-no-dev/AsyncTCP, copy the two files in the src directory into your arduino libraries directory (on Windows that is in $USER\Documents\libraries\Painless_Mesh\src) 
+Note: If compiling fails, complaining about AsyncTCP.h: No such file or directory, then you can get those files from here: https://github.com/me-no-dev/AsyncTCP, then in the Arduino IDE go to "Sketch -> Include Library -> Add .ZIP Library..." and select the downloaded zip file or directory.
 
  
 
-Similarly if it complains about ESPAsyncTCP.h then you can get the files from here: https://github.com/me-no-dev/ESPAsyncTCP and put them in the Painless_Mesh\src folder – I think this is specific to ESP8266 hardware. Will have to remove AsyncTCP files (mentioned above) or it won't compile – must be a better way – install as libs? 
+Similarly if it complains about ESPAsyncTCP.h then you can get the files from here: https://github.com/me-no-dev/ESPAsyncTCP and add this as a library as well.
