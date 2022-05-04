@@ -23,3 +23,5 @@ Note: If compiling fails, complaining about AsyncTCP.h: No such file or director
  
 
 Similarly if it complains about ESPAsyncTCP.h then you can get the files from here: https://github.com/me-no-dev/ESPAsyncTCP and add this as a library as well.
+
+If using Servos on the ESP32, you will need to install the ESP32Servo library.
