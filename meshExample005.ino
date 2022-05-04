@@ -22,7 +22,7 @@
 
 #define   SERVO_PIN       2  // GPIO2  // Convenient pin near 5v and Gnd - might work - might not - needs testing
 #define   TONE_PIN        4  // GPIO4  // Convenient pin near Gnd. Note: ESP8266 WeMos Clone GPIO0 doesn't boot with speaker attached
-#define   ANALOG_SENSOR_PIN         A0  // ADC0  // The only analog input on the ESP8266 (There are more on the ESP32)
+#define   ANALOG_SENSOR_PIN        36  // A0  // ADC0  // The only analog input on the ESP8266 (There are more on the ESP32)
 
 Servo outputServo;  // An instance of the servo library, called 'outputServo' that we can use to control a servo (once we tell it how)
 
