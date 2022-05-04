@@ -14,7 +14,7 @@
 
 #include <ArduinoJson.h>  // Library to create and decode json format messages
 #include "painlessMesh.h"  // Include the painlessMesh library so we can use it
-#include <Servo.h>  // Include the servo library so we can use it
+#include <ESP32Servo.h>  // Include the servo library so we can use it
 
 #define   MESH_PREFIX     "whateverYouLike"  // The name of our mesh network
 #define   MESH_PASSWORD   "somethingSneaky"  // The password to access our mesh network
