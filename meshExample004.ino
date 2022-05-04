@@ -1,3 +1,10 @@
+#include <ESP32Servo.h>
+#include <analogWrite.h>
+#include <ESP32Tone.h>
+#include <ESP32PWM.h>
+
+
+
 //************************************************************
 // this extends the simple example and uses the painlessMesh library to send some data from a sensor and react to received values
 //
@@ -13,7 +20,8 @@
 // - A common message format so all nodes and send and recive data in a way they can all act on - typically json (Javascript Object Notation)
 
 #include "painlessMesh.h"  // Include the painlessMesh library so we can use it
-#include <Servo.h>  // Include the servo library so we can use it
+//#include <Servo.h>  // Include the servo library so we can use it
+
 
 #define   MESH_PREFIX     "whateverYouLike"  // The name of our mesh network
 #define   MESH_PASSWORD   "somethingSneaky"  // The password to access our mesh network
@@ -46,7 +54,7 @@ void sendMessage() {
   //int constrainedVal = constrain(map(micInput, 500, 400, 0, 255),0,255);  // Map the range of observed values to our agreed upon range of 0-255
   // Microphone Sensor Module observed values
   int constrainedVal = constrain(map(analogInput, 800, 900, 0, 255),0,255);  // Map the range of observed values to our agreed upon range of 0-255
-  Serial.printf("Analog read %u, mapped %u\n", micInput, constrainedVal);  // Output the input and mapped/constrained values for testing and tuning
+  Serial.printf("Analog read %u, mapped %u\n", analogInput, constrainedVal);  // Output the input and mapped/constrained values for testing and tuning
   
   mesh.sendBroadcast(String(constrainedVal));  // Next we broadcast the sensor value on our mesh - with any luck all nodes will get it.
   // Note: we could send a message to one node if we know its nodeId using mesh.sendSingle(dest, msg)
@@ -87,7 +95,7 @@ void setup() {
   Serial.begin(115200);  // setup our node to talk on the serial console
   pinMode(TONE_PIN, OUTPUT);  // State that we want to use this pin as an output
   pinMode(SERVO_PIN, OUTPUT);  // State that we want to use this pin as an ouput
-  pinMode(MIC_PIN, INPUT);  // State that we want to use this pin as an input
+  pinMode(ANALOG_SENSOR_PIN, INPUT);  // State that we want to use this pin as an input
   outputServo.attach(SERVO_PIN);  // Here we tell outputServo which pin to use
   // Setup the mesh and tell it what the call back functions it expects are called
   // mesh.setDebugMsgTypes( ERROR | MESH_STATUS | CONNECTION | SYNC | COMMUNICATION | GENERAL | MSG_TYPES | REMOTE ); // all types on
