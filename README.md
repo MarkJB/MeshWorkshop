@@ -25,3 +25,5 @@ Note: If compiling fails, complaining about AsyncTCP.h: No such file or director
 Similarly if it complains about ESPAsyncTCP.h then you can get the files from here: https://github.com/me-no-dev/ESPAsyncTCP and add this as a library as well.
 
 If using Servos on the ESP32, you will need to install the ESP32Servo library. Go to "Sketch -> Include Library -> ESP32Servo" which will add a bunch of librarys to include at the top of the file (you might have to remove tone.h or the compile may fail)
+
+For a good reference guide for Arduino ESP32 pinout and pin uses see this: https://randomnerdtutorials.com/esp32-pinout-reference-gpios/
