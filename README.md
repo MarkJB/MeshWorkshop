@@ -18,11 +18,11 @@ To open the examples, make sure you have selected an ESP32/ESP8266 compatible bo
 
  
 
-Note: If compiling fails, complaining about AsyncTCP.h: No such file or directory, then you can get those files from here: https://github.com/me-no-dev/AsyncTCP, then in the Arduino IDE go to "Sketch -> Include Library -> Add .ZIP Library..." and select the downloaded zip file or directory.
+Note: If compiling fails on an ESP32, complaining about AsyncTCP.h: No such file or directory, then you can get those files from here: https://github.com/me-no-dev/AsyncTCP, then in the Arduino IDE go to "Sketch -> Include Library -> Add .ZIP Library..." and select the downloaded zip file or directory.
 
  
 
-Similarly if it complains about ESPAsyncTCP.h then you can get the files from here: https://github.com/me-no-dev/ESPAsyncTCP and add this as a library as well.
+Similarly if it complains about ESPAsyncTCP.h on an ESP8266 then you can get the files from here: https://github.com/me-no-dev/ESPAsyncTCP and add this as a library as well.
 
 If using Servos on the ESP32, you will need to install the ESP32Servo library. Go to "Sketch -> Include Library -> ESP32Servo" which will add a bunch of librarys to include at the top of the file (you might have to remove tone.h or the compile may fail)
 
